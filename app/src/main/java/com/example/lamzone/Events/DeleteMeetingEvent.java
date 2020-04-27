@@ -2,7 +2,7 @@ package com.example.lamzone.Events;
 
 import android.util.Log;
 
-import com.example.mareu.model.Meeting;
+import com.example.lamzone.Model.Meeting;
 
 public class DeleteMeetingEvent {
 

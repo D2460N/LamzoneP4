@@ -1,10 +1,10 @@
 package com.example.lamzone.DI;
 
-import com.example.mareu.services.DummyMeetingApiService;
-import com.example.mareu.services.MeetingApiService;
+import com.example.lamzone.Service.DummyMeetingApiService;
+import com.example.lamzone.Service.MeetingApiService;
 
 public class DI {
-    private static MeetingApiService service =  new DummyMeetingApiService();
+    private static MeetingApiService service = new MeetingApiService();
 
     /**
      * Get an instance on @{@link MeetingApiService}
@@ -18,7 +18,7 @@ public class DI {
      * Get always a new instance on @{@link MeetingApiService}. Useful for tests, so we ensure the context is clean.
      * @return
      */
-    public static MeetingApiService getNewInstanceApiService() {
+    public static DummyMeetingApiService getNewInstanceApiService() {
 
         return new DummyMeetingApiService();
     }
