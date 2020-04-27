@@ -27,8 +27,8 @@ public class MeetingDetailsActivity extends AppCompatActivity {
 
     Meeting myMeeting;
 
-    @BindView(R.id.meeting_name)
-    TextView myMeetingName;
+    @BindView(R.id.meeting_subject)
+    TextView myMeetingSubject;
 
     @BindView(R.id.meeting_room)
     ImageView myMeetingRoom;
@@ -55,11 +55,11 @@ public class MeetingDetailsActivity extends AppCompatActivity {
         ButterKnife.bind(this);
         mApiService = DI.getMeetingApiService();
         myMeeting = (Meeting) getIntent().getSerializableExtra(BUNDLE_NEIGHBOUR);
-        myToolbar.setTitle(myMeeting.getName());
-        myMeetingRoom.setText(myMeeting.getRoom());
-        myMeetingMails.setText(myMeeting.getMails));
-        myMeetingDate.setText(myMeeting.getDate());
-        myMeetingTime.setText(myMeeting.getTime());
+        myToolbar.setText(myMeeting.getmSubject());
+        myMeetingRoom.setText(myMeeting.getmRoom());
+        myMeetingMails.setText(myMeeting.getmEmails());
+        myMeetingDate.setText(myMeeting.getmDate());
+        myMeetingTime.setText(myMeeting.getmHour());
         setSupportActionBar(myToolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 

@@ -71,7 +71,7 @@
                     android:layout_height="match_parent"
                     android:id="@+id/infos_utilisateur">
                     <TextView
-                        android:id="@+id/meeting_name"
+                        android:id="@+id/meeting_subject"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Nom"

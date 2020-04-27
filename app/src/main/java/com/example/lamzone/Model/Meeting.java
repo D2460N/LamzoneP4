@@ -1,7 +1,9 @@
 package com.example.lamzone.Model;
 
 
-public class Meeting {
+import java.io.Serializable;
+
+public class Meeting implements Serializable {
 
     private String mSubject;
     private Room mRoom;
